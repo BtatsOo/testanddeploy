@@ -5,7 +5,7 @@ import axios from "axios";
 export const authenticateUser = async (name, password) => {
   try {
     const res = await axios.post(
-      `${process.env.REACT_APP_SERVER_URL}/login`,
+      `${process.env.REACT_APP_SERVER_URL}login`,
       {
         name,
         password,
@@ -28,7 +28,7 @@ export const authenticateUser = async (name, password) => {
 export const createUser = async (name, password, email, phoneNumber, city) => {
   try {
     const res = await axios.post(
-      `${process.env.REACT_APP_SERVER_URL}/register`,
+      `${process.env.REACT_APP_SERVER_URL}register`,
       {
         name,
         password,
@@ -60,7 +60,7 @@ export const createUser = async (name, password, email, phoneNumber, city) => {
 // in backend (cookies)
 export const isAuthenticated = async () => {
   try {
-    const res = await axios.get(`${process.env.REACT_APP_SERVER_URL}/login`, {
+    const res = await axios.get(`${process.env.REACT_APP_SERVER_URL}login`, {
       withCredentials: true,
     });
 

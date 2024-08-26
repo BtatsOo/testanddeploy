@@ -13,7 +13,7 @@ function Browse() {
   useEffect(function () {
     async function fetchData() {
       try {
-        const res = await fetch(`${process.env.REACT_APP_SERVER_URL}/courses`);
+        const res = await fetch(`${process.env.REACT_APP_SERVER_URL}courses`);
         const data = await res.json();
         console.log(data);
         setCourseData(data);

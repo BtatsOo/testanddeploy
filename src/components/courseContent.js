@@ -20,7 +20,7 @@ function CourseContent() {
     async function fetchData() {
       try {
         const res = await axios.get(
-          `${process.env.REACT_APP_SERVER_URL}/courses/enroll/${id}`,
+          `${process.env.REACT_APP_SERVER_URL}courses/enroll/${id}`,
           {
             withCredentials: true,
           }

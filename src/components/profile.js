@@ -37,7 +37,7 @@ export function Profile() {
     const enrolledCoursesFn = async () => {
       try {
         const { data } = await axios.get(
-          `${process.env.REACT_APP_SERVER_URL}/courses/enrolled-courses`,
+          `${process.env.REACT_APP_SERVER_URL}courses/enrolled-courses`,
           {
             withCredentials: true,
           }

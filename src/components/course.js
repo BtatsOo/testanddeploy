@@ -30,7 +30,7 @@ function Course() {
     async function fetchData() {
       try {
         const res = await fetch(
-          `${process.env.REACT_APP_SERVER_URL}/courses/${id}`
+          `${process.env.REACT_APP_SERVER_URL}courses/${id}`
         );
 
         const data = await res.json();

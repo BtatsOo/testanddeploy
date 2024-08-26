@@ -1,0 +1,227 @@
+@font-face {
+  font-family: "Monadi";
+  src: url("/src/fonts/Monadi.ttf") format("truetype");
+  src: url("/src/fonts/Jozoor\ Font.otf") format("opentype");
+  /* src: url("/src/fonts/CooperArabic.ttf") format("truetype"); */
+  font-weight: normal;
+  font-style: normal;
+}
+:root {
+  --mainColor: #e9c112;
+  --secColor: #3f3d56;
+  --boxShadow: #00000026 0px 0 8px 1px;
+}
+body {
+  font-family: "Jozoor Font";
+  color: white;
+
+  direction: rtl;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.top-container {
+  position: relative;
+  background-color: #e9c112;
+}
+.container {
+  width: 90%;
+  margin: 0 auto;
+  padding-bottom: 100px;
+}
+header {
+}
+.top-container::before {
+  content: "";
+  position: absolute;
+  background-image: url(/public/images/backgr.png);
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+}
+
+/* Start Nav */
+nav {
+  display: flex;
+  height: 80px;
+}
+nav::before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  width: 100%;
+  height: 3px;
+  border-radius: 4px;
+  background-color: var(--secColor);
+  right: 50%;
+  transform: translateX(50%);
+}
+nav ul {
+  display: flex;
+  list-style: none;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+
+  color: white;
+  font-size: 20px;
+}
+nav ul li {
+  display: flex;
+  align-items: center;
+}
+nav ul li a {
+  text-decoration: none;
+  color: white;
+}
+nav .logo img {
+  width: 120px;
+  height: 100%;
+}
+
+/* Small Screen */
+nav.small-screen {
+  justify-content: space-between;
+  padding: 0 20px;
+}
+.user-btn {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.user-btn img {
+  width: 50px;
+}
+.balance {
+}
+.ul-container {
+  opacity: 0;
+  background-color: hwb(210 96% 3%);
+  width: 180px;
+  position: absolute;
+  padding: 10px 0;
+  top: 90%;
+  border-radius: 4px;
+  box-shadow: 0px 0px 12px 0px #56545452;
+  transition: 0.7s;
+  z-index: 2;
+}
+.ul-container ul {
+  flex-direction: column;
+}
+.ul-container ul li {
+  cursor: pointer;
+  width: 90%;
+  transition: 0.7s;
+  padding: 0 5%;
+}
+.ul-container ul li:hover {
+  background-color: hwb(0deg 83.8% 16.2% / 27%);
+}
+.ul-container ul li a {
+  color: black;
+}
+.home-li {
+  position: relative;
+  margin-bottom: 5px;
+}
+.home-li::before,
+.profileLi::before {
+  content: "";
+  width: 100%;
+  position: absolute;
+  height: 3px;
+  top: 100%;
+  background-color: grey;
+  right: 0;
+  border-radius: 10px;
+  opacity: 0.4;
+}
+
+@media (min-width: 992px) {
+} /* End Nav */
+
+/* Start Slider */
+
+.bdy-head {
+  display: flex;
+  gap: 30px;
+}
+.bdy-head .text-box {
+  width: 50%;
+
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  line-height: 1.2;
+}
+.bdy-head .img-box {
+  align-self: center;
+  width: 50%;
+}
+
+.bdy-head .img-box img {
+  width: 100%;
+}
+.bdy-head .text-box h1 {
+  font-size: 6vw;
+  font-weight: 400;
+  margin-bottom: 30px;
+  width: 30vw;
+}
+.bdy-head .text-box p {
+  font-size: 2vw;
+}
+.bdy-head .text-box .btn {
+}
+
+.btn {
+  font-family: "Jozoor Font";
+  width: 14vw;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  color: black;
+  border-radius: 20px;
+  background-color: white;
+  font-size: 2vw;
+  border: none;
+}
+
+/* Start Sections  */
+
+section.sec {
+  margin: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.secimg-box {
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+}
+.secimg-box img {
+  width: 80%;
+}
+.sectitle-box {
+  width: 50%;
+  padding-top: 70px;
+  display: flex;
+
+  justify-content: space-around;
+  flex-direction: column;
+  line-height: 1.2;
+}
+.sectitle-box p {
+  opacity: 0.7;
+  font-size: 1.4vw;
+}
+.sectitle-box h1 {
+  font-size: 8vw;
+  font-weight: 400;
+}
+.sectitle-box .btn {
+}

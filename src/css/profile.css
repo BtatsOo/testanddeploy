@@ -1,0 +1,56 @@
+.profile-container {
+  color: black;
+}
+.profile-container .overlayConfrimMessage {
+  background-color: #00000036;
+}
+.confirmCard.fs-render {
+  position: relative;
+  transform: translateY(-400%);
+  /* transform: scale(0.000001); */
+}
+.profile-body {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+
+  margin: 0 auto;
+}
+.confirmCard {
+}
+
+.profile-content {
+  flex-grow: 2;
+}
+.profile-details {
+  display: flex;
+  gap: 30px;
+}
+.profile-details .img-container {
+  width: 150px;
+}
+.profile-details .img-container img {
+  width: 100%;
+}
+.profile-bar {
+  flex-basis: 30%;
+  padding-top: 90px;
+}
+.profile-bar ul {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  list-style: none;
+}
+.profile-bar ul li {
+  box-shadow: var(--boxShadow);
+  border-radius: 7px;
+  padding-right: 15px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.profile-bar ul li.active,
+.profile-bar ul li:hover {
+  background-color: var(--secColor);
+  color: white;
+}

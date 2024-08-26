@@ -1,0 +1,154 @@
+.browse-container {
+  background-color: #f5f6f7;
+}
+.welcome-sec {
+  margin: 0 auto;
+
+  text-align: center;
+}
+.welcome-sec h1 {
+  color: var(--secColor);
+  font-size: 10vh;
+}
+.welcome-sec p {
+  color: var(--secColor);
+}
+.welcome-sec .btn {
+  background-color: var(--mainColor);
+  color: white;
+  margin-bottom: 30px;
+  scale: 1.1;
+  border-radius: 400px;
+  width: max-content;
+  font-size: 28px;
+  padding: 0 30px;
+}
+.container-br {
+  width: 1270px;
+  margin: 0 auto;
+}
+
+/* Courses */
+
+.courses {
+  color: black;
+}
+
+.courses h1 {
+  font-size: 8vh;
+  margin-right: 20px;
+  margin-top: 20px;
+  color: var(--secColor);
+}
+
+.crs-container {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, 330px);
+}
+.crs-sec {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  opacity: 0;
+  transition: 0.9s;
+}
+.opacity-active {
+  opacity: 1;
+  margin-top: 0;
+}
+.crs-sec img {
+  width: 100%;
+  border-radius: 10px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  height: 50%;
+}
+.crs-content-box {
+  box-shadow: 0px 0px 0px 1px #e2e2e2c9;
+  border-radius: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 20px;
+  padding-bottom: 30px;
+  justify-content: space-between;
+
+  transition: box-shadow 0.2s;
+}
+.crs-content-box:hover {
+  box-shadow: 0px 0px 6px 1px #b6b6b6c9;
+}
+.crs-content-box h3 {
+  position: relative;
+  font-size: 30px;
+  margin-bottom: 5px;
+  width: 100%;
+  text-align: start;
+}
+.crs-content-box p {
+  text-align: start;
+}
+.crs-content-box h3:before {
+  content: "";
+  position: absolute;
+  background-color: var(--secColor);
+  width: 169px;
+  height: 2px;
+  bottom: 0vw;
+  transition: 0.3s;
+}
+.crs-content-box h3:hover::before {
+  width: 250px;
+}
+.crs-content-box .purshase {
+  border-radius: 6vh;
+  padding: 8px 20px;
+  font-size: 2vh;
+  cursor: pointer;
+
+  box-shadow: 0px 0px 0px 1px black;
+  transition: 0.4s;
+}
+.crs-content-box .price {
+  background-color: #0a4191;
+  padding: 5px 30px;
+  color: white;
+  border-radius: 15px;
+  transition: 0.3s;
+}
+.price:hover {
+  background-color: #3690d0;
+}
+.kofta {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.crs-content-box > span span {
+  margin: 3px;
+}
+.crs-content-box .purshase:hover {
+  color: white;
+  background-color: var(--secColor);
+}
+
+@media (max-width: 400px) {
+  nav {
+    justify-content: center !important;
+  }
+  .balance a {
+    line-height: 0;
+    font-size: 19px !important;
+    text-align: center;
+  }
+  .logo img {
+    width: 80px !important;
+  }
+  .crs-container {
+    grid-template-columns: repeat(auto-fit, 240px);
+  }
+}

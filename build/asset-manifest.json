@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/static/css/main.802210f1.css",
+    "main.js": "/static/js/main.83abf047.js",
+    "static/media/Jozoor Font.otf": "/static/media/Jozoor Font.ae961500352e50f68fd2.otf",
+    "static/media/bg.jpg": "/static/media/bg.1ca0a9b46d3b84d8a79f.jpg",
+    "static/media/Monadi.ttf": "/static/media/Monadi.31fa59135c6abb688019.ttf",
+    "static/media/backgr.png": "/static/media/backgr.2e1d1ad247ae2d43f1bd.png",
+    "index.html": "/index.html",
+    "main.802210f1.css.map": "/static/css/main.802210f1.css.map",
+    "main.83abf047.js.map": "/static/js/main.83abf047.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.802210f1.css",
+    "static/js/main.83abf047.js"
+  ]
+}

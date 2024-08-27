@@ -18,7 +18,7 @@ function Course() {
 
   const handleOpenConfirmMessage = (e) => {
     if (userData?.enrolledCourses?.includes(id)) {
-      window.location.href = `/courses/enroll/${id}`;
+      window.location.href = `/courses/enroll${id}`;
     } else {
       setOpenConfirmMessage(!openConfirmMessage);
     }
@@ -30,7 +30,7 @@ function Course() {
     async function fetchData() {
       try {
         const res = await fetch(
-          `${process.env.REACT_APP_SERVER_URL}courses/${id}`
+          `${process.env.REACT_APP_SERVER_URL}courses${id}`
         );
 
         const data = await res.json();

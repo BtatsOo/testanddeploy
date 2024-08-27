@@ -34,7 +34,7 @@ const dataLis2 = [
     title: "تسجيل خروج",
     src: "/login",
     async callback() {
-      const res = await axios.get(`${REACT_APP_SERVER_URL}logout`, {
+      const res = await axios.get(`${process.env.REACT_APP_SERVER_URL}logout`, {
         withCredentials: true,
       });
 
